@@ -2,16 +2,101 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-
-    Hola como tan se traboooo mi zoom 
     
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
+    <title>FX | MX con</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Passion+One:wght@700&family=Roboto&display=swap" rel="stylesheet">  
+  </head>
+
+  <body>
+       
+
+    <header class="header"> 
+      <h1>FX</h1>
+    </header>
+
+    <main class="maincontent">
+      <div class="main-video">
+        <video src="./video/production ID 5157561.mp4" autoplay loop></video>
+      </div>
+
+<div class="main-overlay">
+
+</div>
+
+<div class="texto">
+
+</div>
+
+    </main>
+  
+   
+
+    <br>
+    <br>
+    <br>
+      <br>
+      <h2>
+      Agrega un método de pago </h2>
+      <br>
+      
+    <br>
+      <h3>
+      Elige un método de pago, completa la información e inicia tu suscripción
+    </h3>
+   
+
+        <!--FORMULARIO-->
+
+        <form name=formulario id="formulariotarjeta" class="formulariotarjeta">
+      <div >
+        <label class="numeroTarjeta" for="numeroTarjeta">Numero Tarjeta</label>
+        <input class="numeroTarjeta" type="text" name="numberCard" id="numberCard" 
+        placeholder="Insertar Numero"  
+        maxlength="16" >
+
+      </div>
+
+      <div >
+        <label class="nombre" for="nombre">Nombre Completo</label>
+        <input class="numeroTarjeta" type="text" name="nombre" id="nombre" placeholder="Insertar Nombre" required pattern="[a-zA-z]+">
+
+        <!--Boton para validad respuesta-->
+        <button name="button" type="submit" id="enviar" class="enviar">Enviar</button>
+
+      </div>
+
+      </form>
+ <!--Segundo forumlario-->
+      <fieldset>
+        <form action="" id="segundo" class="segundo">
+          <div >
+            <label class="mesaño" for="mesaño">Fecha expiración</label>
+            <input class="mesaño" type="text" id="cvv" placeholder="MM/YY" name="mesaño" 
+            minlength="4" maxlength="4" required pattern="[0-9]+">
+    
+          </div>
+    
+          <div >
+            <label class="cvv" for="cvv">CVV</label>
+            <input class="cvv" type="text" id="cvv" placeholder="Insertar CVV" required pattern="[0-9]+">
+
+      </fieldset>
+
+ <!--Pie de pagina-->
+
+   <div>
+    <footer id="pie">
+      <p> <small> CardValidation ARGM Laboratoria
+    </footer>
+    </div>
+
+
+  
+  </div>
+
+  <script src="index.js" type="module"></script>
   </body>
 </html>
