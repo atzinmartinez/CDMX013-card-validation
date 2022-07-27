@@ -10,29 +10,33 @@ const validator = { //objeto
 };
 
 
-enviar.addEventListener("click",function(event){
-  event.preventDefault ();
-  const tarjeta = numberCard.value
-  const revertido = tarjeta.split("").reverse()
-  console.log (revertido);
-
-  //for (let contador = 0; contador<revertido.length);
 
 
-  for (let contador = 0; contador<revertido.length; contador++)
-  //console.log(contador)
-  {
 
-  if (revertido [contador] % 2 === 0) {
-console.log ("El numero:" + revertido[contador] + "es par")}
-    else{
-      console.log ("El numero:" + revertido[contador] + "es impar")
-      return contador [1,3,5,7,9,11,13,15]
+// se pone [i], cuando se va a acceder a un array
+  /*if (revertido [i] % 2 === 0) {
+      console.log ("El numero:" + revertido[i] + " es par")}
+  else{
+      console.log ("El numero:" + revertido[i] + " es impar")
+    
+    }
+*/
+
+//Number funcion que cambia a numeros ()
+
+      //return i [1,3,5,7,9,11,13,15]
       // revertido.array.forEach(contenedor => { revertido.1, revertido.3, revertido.5
         
+//var search = function (array, elemento){
+  //for(var i = 0; i)
+
+
+      //newArray.push(revertido[contador]);
+     // return newArray;
       // });
-    }
-    }
+    
+   // revertido ()
+    
   
     //practicar sobre los arreglos y 
 
@@ -46,7 +50,6 @@ console.log ("El numero:" + revertido[contador] + "es par")}
 
  //validator.isValid(numberCard.value)
   
-})
 
 
 export default validator;
