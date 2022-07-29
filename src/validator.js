@@ -1,13 +1,63 @@
-
-
+//todo el algoritmo para la tarjeta va aqui 
 const validator = { //objeto 
 
-  isValid: function(numeros){ //declaracion isvalid
-  console.log(numeros);
-  }
+  isValid: function(numberCard){ //declaracion isvalid
+  console.log(numberCard);
+
+ const reverse = numberCard.split("").reverse().map(Number)
+  console.log (reverse);
+ 
+//let i = 0;
+for (let i = 0; i < reverse.length; i++)
+  //console.log(contador)
+  {
+    // estudiar array
+    // array:      4356
+    // posiciones: 0123 por aca va la i
+    let numeroActual = reverse[i]
+    let impares = (i % 2 === 1); //pares e impares con true false //estudiar operadores logicos
+    console.log (impares);
+    console.log (numeroActual);
+
+    if (impares) {
+     let multiplicar = numeroActual * 2
+      console.log (multiplicar);
+      
+      if (multiplicar>=10) {
+        String(multiplicar);
+        console.log(String(multiplicar));
+        
+
+
+      } 
+
+    }
+    
+    
+    //if impar regreso verdadero debe multiplicar *2
+    //if (impares)
+    // if (i % 2 === 1)
+    }
   
 
-};
+
+//como declarar arreglos
+//como manipularlos
+  
+
+
+  
+//if (revertido [i] % 2 === 1) {
+//console.log (revertido [i]) // 
+
+} 
+
+
+}
+
+
+
+
 
 
 
