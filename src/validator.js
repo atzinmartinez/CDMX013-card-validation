@@ -1,59 +1,96 @@
 //todo el algoritmo para la tarjeta va aqui 
 const validator = { //objeto 
 
-  isValid: function(numberCard){ //declaracion isvalid
-  console.log(numberCard);
+  isValid: function (numberCard) { //declaracion isvalid
+    //console.log(numberCard);
 
- const reverse = numberCard.split("").reverse().map(Number)
-  console.log (reverse);
- 
-//let i = 0;
-for (let i = 0; i < reverse.length; i++)
-  //console.log(contador)
-  {
-    // estudiar array
-    // array:      4356
-    // posiciones: 0123 por aca va la i
-    let numeroActual = reverse[i]
-    let impares = (i % 2 === 1); //pares e impares con true false //estudiar operadores logicos
-    console.log (impares);
-    console.log (numeroActual);
+    const reverse = numberCard.split("").reverse().map(Number)
+    console.log(reverse);
 
-    if (impares) {
-     let multiplicar = numeroActual * 2
-      console.log (multiplicar);
+    
+    let ultima= 0;
+    for (let i = 0; i < reverse.length; i++){ //ciclo
+    //console.log(contador)
+
+      // estudiar array
+      // array:      4356
+      // posiciones: 0123 por aca va la i
+      let numeroActual = parseInt(reverse[i]);
+      let impares = (i % 2 !== 0); //pares e impares con true false //estudiar operadores logicos
+      //console.log (impares);
+      //console.log (numeroActual);
+
+      if (impares) {
+        let multiplicar = numeroActual * 2
+        numeroActual = multiplicar;                    //numero multiplicado pares
+        //console.log (multiplicar);
+      }
+     
       
-      if (multiplicar>=10) {
-        String(multiplicar);
-        console.log(String(multiplicar));
-        
 
+      if (numeroActual > 9) {
+        let sumarN = numeroActual - 9;                 //numero sumado
+        numeroActual = sumarN;   
 
-      } 
+      }
+      ultima += numeroActual;
+      console.log (numeroActual);
+      //let suma = numeroActual.reduce((numero, total) => numero += total, 0);
 
+      //console. log(suma);
+      //console.log(numeroActual);
+      
+      
+      /*for(let i = 0; i<numeroActual.length; i++){
+        sum += numeroActual[i]; }
+
+        console.log(sum);*/
+
+       /* resultado = doubleNums.concat(singleNums);
+ console.log(resultArray) */
+
+     
+
+      // join() para juntar todos
+
+      /*let todo = 0; //devuelve 16 0
+      for (let final = 0; final<numeroActual.length; final++){
+      todo = todo++ (numeroActual[final])
+      }
+    console.log(todo);
+
+*/
     }
-    
-    
-    //if impar regreso verdadero debe multiplicar *2
-    //if (impares)
-    // if (i % 2 === 1)
+console.log(ultima);
+      
     }
-  
 
 
-//como declarar arreglos
-//como manipularlos
-  
+
+  }
 
 
-  
-//if (revertido [i] % 2 === 1) {
-//console.log (revertido [i]) // 
 
-} 
+  //como declarar arreglos
+  //como manipularlos
 
 
-}
+
+
+  //if (revertido [i] % 2 === 1) {
+  //console.log (revertido [i]) // 
+
+
+  /*let result = sum % 10 === 0;
+  if (result) {
+      true;
+  } else {
+      false;
+  }
+  return result;*/
+
+
+
 
 
 
@@ -64,31 +101,31 @@ for (let i = 0; i < reverse.length; i++)
 
 
 // se pone [i], cuando se va a acceder a un array
-  /*if (revertido [i] % 2 === 0) {
-      console.log ("El numero:" + revertido[i] + " es par")}
-  else{
-      console.log ("El numero:" + revertido[i] + " es impar")
-    
-    }
+/*if (revertido [i] % 2 === 0) {
+    console.log ("El numero:" + revertido[i] + " es par")}
+else{
+    console.log ("El numero:" + revertido[i] + " es impar")
+  
+  }
 */
 
 //Number funcion que cambia a numeros ()
 
-      //return i [1,3,5,7,9,11,13,15]
-      // revertido.array.forEach(contenedor => { revertido.1, revertido.3, revertido.5
-        
+//return i [1,3,5,7,9,11,13,15]
+// revertido.array.forEach(contenedor => { revertido.1, revertido.3, revertido.5
+
 //var search = function (array, elemento){
-  //for(var i = 0; i)
+//for(var i = 0; i)
 
 
-      //newArray.push(revertido[contador]);
-     // return newArray;
-      // });
-    
-   // revertido ()
-    
-  
-    //practicar sobre los arreglos y 
+//newArray.push(revertido[contador]);
+// return newArray;
+// });
+
+// revertido ()
+
+
+//practicar sobre los arreglos y 
 
 
 
@@ -98,8 +135,8 @@ for (let i = 0; i < reverse.length; i++)
 */
 
 
- //validator.isValid(numberCard.value)
-  
+//validator.isValid(numberCard.value)
+
 
 
 export default validator;
