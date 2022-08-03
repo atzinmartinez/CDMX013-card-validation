@@ -60,10 +60,10 @@ font-size: 80px;
 
     background-color: #2f2f2f;
      width: 40%;
-    height: 500px;
+    height: 800px;
     margin: 500px ;
     margin-top: 154px;
-    margin-left: 241px;
+    margin-left: 500px;
     border-radius: 15px;
     box-shadow: 10px 10px 5px grey;
     position: relative;
@@ -105,7 +105,7 @@ font-size: 80px;
       width: 40%;
       height: 500px;
       
-      margin-left: 1300px;
+      margin-left: 1500px;
       border-radius: 15px;
       border-top-right-radius: 10px;
       box-shadow: 10px 10px 5px grey;
@@ -132,7 +132,7 @@ font-size: 80px;
   padding: 10px 50px;
 }
 .cvv{
-  padding: 10px 50px;
+  padding: 30px 50px;
 }
 
 
