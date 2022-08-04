@@ -37,18 +37,16 @@ const validator = { //objeto
 
       
     }
+    if (ultima%10==0){
+      alert ("Valida")
 
-   
-      
-    
-
+    }else {
+      alert ("No valida")
+    }
+  
   }
-
-
-
 }
 
 //validator.isValid(numberCard.value)
 
 export default validator;
-
