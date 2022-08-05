@@ -10,7 +10,31 @@ enviar.addEventListener("click",function(event){ // al hacer el evento click en 
     event.preventDefault ();
 
     validator.isValid (numberCard.value)
-  } );
+    
+
+    if (validator.isValid(numberCard.value) == true){
+
+      alert ("Valida")
+    
+     }else {
+      alert ("No valida")
+     }
+    
+      } )
+
+
+    let resultado = validator.maskify (numberCard.value)
+//console.log(resultado);
+numberCard.value = resultado; 
+
+
+//devuelve automaticamente el true el if (codigo limpio)
+
+
+   
+
+
+  
 
 
  //investigar expresiones y operadores

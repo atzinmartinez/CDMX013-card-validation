@@ -5,7 +5,7 @@ const validator = { //objeto
     //console.log(numberCard);
 
     const reverse = numberCard.split("").reverse().map(Number)
-    console.log(reverse);
+    //console.log(reverse);
 
     
     let ultima = 0;
@@ -33,20 +33,85 @@ const validator = { //objeto
 
       }
       ultima += numeroActual;
-      console.log(numeroActual);
+      //console.log(numeroActual);
 
       
     }
     if (ultima%10==0){
-      alert ("Valida")
+      
+      return true
+     
 
     }else {
-      alert ("No valida")
+      
+      return false
+      
     }
   
+    
+
+
+  },
+
+ maskify:function (numberCard){
+  let gato = ""
+  
+  for (let a=0; a<numberCard.length; a++){
+
+    if (a<numberCard.length-4){
+      gato = gato+"#";
+    }else{
+gato = gato + numberCard [a];
+    }
+    //console.log(gato)
   }
-}
+  return gato;
+  
+ }
+ };
+
+ 
+
+export default validator;
+
+ /*
+  maskify: function (numberCard) {
+  let gato;
+ gato = numberCard.split("");
+  for (let a=0; a<gato.length -4; a++){
+  gato[a] = "#";
+  }
+
+  numberCard = numberCard.join("");
+  return numberCard 
+*/
+
+//dentro del objeto
+
+
+   
+
 
 //validator.isValid(numberCard.value)
 
-export default validator;
+
+
+
+    
+/*function: maskify (numberCard) {
+
+  let numberCard = numberCard.split("");
+  for (let a=0; a<numberCard.length -4; a++){
+  numberCard[a] = "#";
+  }
+
+  numberCard = numberCard.join("");
+  return numberCard 
+
+
+
+  
+
+ 
+*/
+
