@@ -20,12 +20,15 @@ enviar.addEventListener("click",function(event){ // al hacer el evento click en 
       alert ("No valida")
      }
     
+
+     let resultado = validator.maskify (numberCard.value)
+     //console.log(resultado);
+     numberCard.value = resultado; 
+
       } )
 
 
-    let resultado = validator.maskify (numberCard.value)
-//console.log(resultado);
-numberCard.value = resultado; 
+   
 
 
 //devuelve automaticamente el true el if (codigo limpio)
