@@ -1,12 +1,14 @@
-*{
+ /* Selector universal */ 
+*{ 
   margin: 0;
   padding:0;
   overflow-x: hidden;
 }
 
 body {
-
-  background: linear-gradient(rgb(79, 79, 79), rgb(188, 188, 188));
+display: flex
+align-items: center;
+justify-content: unset;  
   color: #FFFFFF;
   font-family: 'Roboto', sans-serif;
 }
@@ -19,12 +21,8 @@ body {
   min-height: 100%;
   transform: translateX(calc((100% - 100vw) / 2));
   z-index: -2;
-  top: 140px;
+  top: 0px;
 }
-
-
-
-
 
 .header {
   text-align: center;
@@ -47,97 +45,117 @@ font-size: 80px;
  left: 1000px;
  top: 235px;}
     
-.nombre{
-  padding: 10px 50px; 
-}
-
-
 
   /*---Formulario---*/
-
+.contenedor {
+  display: flex;
+  justify-content: center;
+  
+}
 
   .formulariotarjeta{
 
-    background-color: #2f2f2f;
-     width: 40%;
-    height: 800px;
+    background-color: #454545;
+     width: 800px;
+    height: 600px;
     margin: 500px ;
     margin-top: 154px;
     margin-left: 500px;
     border-radius: 15px;
-    box-shadow: 10px 10px 5px grey;
+    box-shadow: 10px 10px 5px rgb(16, 16, 16);
     position: relative;
     top: -80px;
-    border-top-right-radius: 200px;
+    
     
    
 
   }
 
-  .formulariotarjeta label{
-    display: block;
+  .nombre{
+    display: flex;
+  justify-content: center;
+    padding: 10px 50px; 
+    
     color: rgb(255, 255, 255);
     margin-bottom: 3%;
     font-size: 50px;
-   
-   
+    
+    align-items: center;
   }
-  
 
-  .formulariotarjeta input,
-  .formulariotarjeta select{
-
-      border: 2px solid #724949;
-      font-size: 18px;
-      height: 50px;
-      width: 50%;
-      padding: 5px 12px;
-      border-radius: 5px;
+  .nombre1{
+    display: flex;
+    justify-content: center;
+      font-size: 40px;
+      left: 100px;
+      margin: auto;
+      left: 250px;
       text-align: center;
-      
   
-    }
-  
+    
 
-    fieldset{
+  }
 
-      background-color: #2f2f2f;
-      width: 40%;
-      height: 500px;
-      
-      margin-left: 1500px;
-      border-radius: 15px;
-      border-top-right-radius: 10px;
-      box-shadow: 10px 10px 5px grey;
-      position: relative;
-      top: -1080px;
-      border-top-right-radius: 200px;
-     
-    }
+  .numeroTarjeta {
+    display: flex;
+  justify-content: center;
+    padding: 10px 50px; 
+    
+    color: rgb(255, 255, 255);
+    margin-bottom: 3%;
+    font-size: 50px;
+    align-items: center;
+  }
 
-  button {
-
-    border: 2px solid #2f2f2f;
-    font-size: 22px;
-    position: absolute;
-    width: 300px;
-    height: 30px;
+  .numeroTarjeta1{
+   
+  display: flex;
+  justify-content: center;
+    font-size: 40px;
     left: 100px;
-    top: 400px;
-    box-shadow: 3px 3px 2px rgb(249, 249, 249);
-    border-radius: 7px;
-   }
-  
-.mesaño{
-  padding: 10px 50px;
-}
-.cvv{
-  padding: 30px 50px;
-}
+    margin: auto;
+    left: 250px;
+    text-align: center;
+    
+  }
 
+  .enviar
+{
+  
+  border: 2px solid #2f2f2f;
+  font-size: 22px;
+  position: absolute;
+  width: 300px;
+  height: 50px;
+  left: 250px;
+  top: 450px;
+  box-shadow: 3px 3px 2px rgb(29, 28, 28);
+  border-radius: 7px;
+      
+  
+    }
+
+    .restaurar
+  {
+    border: 2px solid #474747;
+    font-size: 18px;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 300px;
+    top: 350px;
+    box-shadow: 3px 3px 2px rgb(14, 14, 14);
+    border-radius: 7px;
+  }
+
+  .text{
+    display: flex;
+  justify-content: center;
+  }
+ 
 
 #pie {
   text-align: center;
  
-  left: 800px;
-  top: 800px;}
+  left: 200px;
+  top: 100px;}

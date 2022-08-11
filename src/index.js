@@ -1,23 +1,24 @@
 // to el dom va dentro de index
 import validator from './validator.js';
 
-const numberCard = document.getElementById ("numberCard"); //variable numero tarjeta llama al elemento
-const enviar = document.getElementById ("enviar"); // //variable enviar llama al elemento
+const numberCard = document.getElementById ("numberCard"); //elemento input numero de tarjeta
+const enviar = document.getElementById ("enviar"); // //elemento botón
+const texto = document.getElementById ("texto"); //manda a traer el texto
 
 
 
-enviar.addEventListener("click",function(event){ // al hacer el evento click en enviar se declara la función event
+enviar.addEventListener("click",function(event){ // Escucha click (evento)
     event.preventDefault ();
 
-    validator.isValid (numberCard.value)
+  validator.isValid (numberCard.value) 
+
     
 
     if (validator.isValid(numberCard.value) == true){
+     texto.innerHTML ="Esta tarjeta es valida"
 
-      alert ("Valida")
-    
      }else {
-      alert ("No valida")
+      texto.innerHTML="Esta tarjeta es no valida"
      }
     
 
@@ -26,22 +27,5 @@ enviar.addEventListener("click",function(event){ // al hacer el evento click en 
      numberCard.value = resultado; 
 
       } )
-
-
+      
    
-
-
-//devuelve automaticamente el true el if (codigo limpio)
-
-
-   
-
-
-  
-
-
- //investigar expresiones y operadores
- //parametros y argumentos
-
-
-//hacer split y Map transforma a numeros

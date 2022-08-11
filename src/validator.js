@@ -4,7 +4,7 @@ const validator = { //objeto
   isValid: function (numberCard) { //declaracion isvalid
     //console.log(numberCard);
 
-    const reverse = numberCard.split("").reverse().map(Number)
+    const reverse = numberCard.split("").reverse().map(Number)  //reversa>array>numero
     //console.log(reverse);
 
     
@@ -12,11 +12,9 @@ const validator = { //objeto
     for (let i = 0; i < reverse.length; i++) { //ciclo
       //console.log(contador)
 
-      // estudiar array
-      // array:      4356
       // posiciones: 0123 por aca va la i
-      let numeroActual = parseInt(reverse[i]);
-      let impares = (i % 2 !== 0); //pares e impares con true false //estudiar operadores logicos
+      let numeroActual = parseInt(reverse[i]); //Convierte cadena y devuelve numero entero.
+      let impares = (i % 2 !== 0); //pares e impares con true / false // operador desigualdad
       //console.log (impares);
       //console.log (numeroActual);
 
@@ -28,11 +26,11 @@ const validator = { //objeto
 
 
       if (numeroActual > 9) {
-        let sumarN = numeroActual - 9;                 //numero sumado
+        let sumarN = numeroActual - 9;                 //numero sumado (se resta- 9 y da lo mismo)
         numeroActual = sumarN;
 
       }
-      ultima += numeroActual;
+      ultima += numeroActual;                             //suma de todos los numeros
       //console.log(numeroActual);
 
       
@@ -40,7 +38,7 @@ const validator = { //objeto
     if (ultima%10==0){
       
       return true
-     
+                                                          //si es residuo 0 pasa                    
 
     }else {
       
@@ -48,13 +46,10 @@ const validator = { //objeto
       
     }
   
-    
-
-
-  },
+  },                                       
 
  maskify:function (numberCard){
-  let gato = ""
+  let gato = ""                                            //function maskify
   
   for (let a=0; a<numberCard.length; a++){
 
@@ -70,48 +65,6 @@ gato = gato + numberCard [a];
  }
  };
 
- 
-
 export default validator;
 
- /*
-  maskify: function (numberCard) {
-  let gato;
- gato = numberCard.split("");
-  for (let a=0; a<gato.length -4; a++){
-  gato[a] = "#";
-  }
-
-  numberCard = numberCard.join("");
-  return numberCard 
-*/
-
-//dentro del objeto
-
-
-   
-
-
-//validator.isValid(numberCard.value)
-
-
-
-
-    
-/*function: maskify (numberCard) {
-
-  let numberCard = numberCard.split("");
-  for (let a=0; a<numberCard.length -4; a++){
-  numberCard[a] = "#";
-  }
-
-  numberCard = numberCard.join("");
-  return numberCard 
-
-
-
-  
-
- 
-*/
 

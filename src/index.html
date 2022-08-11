@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     
-    <title>FX | MX con</title>
+    <title>FX | MX con</title> <!--titulo pestaña-->
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--fuentes tipo-->
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Passion+One:wght@700&family=Roboto&display=swap" rel="stylesheet">  
   </head>
 
@@ -14,30 +14,21 @@
        
 
     <header class="header"> 
-      <h1>FX</h1>
+      <h1>FX</h1> <!--titulo--> 
     </header>
 
     <main class="maincontent">
-      <div class="main-video">
+      <div class="main-video"> <!--video-->
         <video src="./video/production ID 5157561.mp4" autoplay loop></video>
       </div>
-
-<div class="main-overlay">
-
-</div>
-
-<div class="texto">
-
-</div>
-
     </main>
   
-   
+  
+    <br>
+    <br>
+    <br>
+              <!--Texto-->
 
-    <br>
-    <br>
-    <br>
-      <br>
       <h2>
       Agrega un método de pago </h2>
       <br>
@@ -47,45 +38,44 @@
       Elige un método de pago, completa la información e inicia tu suscripción
     </h3>
 
-<div>
-   <h4>  </h4>
-  </div>
 
         <!--FORMULARIO-->
-
+        <div class = "contenedor">
         <form name="formulario" id="formulariotarjeta" class="formulariotarjeta">
-      <div >
-        <label class="numeroTarjeta" for="numeroTarjeta">Numero Tarjeta</label>
-        <input class="numeroTarjeta" type="text" name="numberCard" id="numberCard" 
-        placeholder="Insertar Numero"  
-        maxlength="16" >
+      
 
-        
-      </div>
-
-      <div >
         <label class="nombre" for="nombre">Nombre Completo</label>
-        <input class="numeroTarjeta" type="text" name="nombre" id="nombre" placeholder="Insertar Nombre" required pattern="[a-zA-z]+">
-
+        <input class="nombre1" type="text" name="nombre" id="nombre" 
+        placeholder="Insertar Nombre" required pattern="[a-zA-z]+" >
+        
+        <label class="numeroTarjeta" for="numeroTarjeta">Numero Tarjeta</label>
+        <input class="numeroTarjeta1" type="text" name="numberCard" id="numberCard" 
+        placeholder="Insertar Numero"  
+        maxlength="16"  required pattern>
+       
         <!--Boton para validad respuesta-->
         <button name="button" type="submit" id="enviar" class="enviar">Enviar</button>
-        <input type="reset" value="Restaurar">
 
+        <!--Boton para validad restaurar-->
+        <input type="reset" class="restaurar" value="Restaurar">
+
+     
+
+      <p id="texto" class="text"> </p>
+        </form>
       </div>
 
-      </form>
- <!--Segundo forumlario-->
-      
+  
 
  <!--Pie de pagina-->
 
    <div>
     <footer id="pie">
-      <p> <small> CardValidation ARGM Laboratoria </small></p>
+      <p> <small> &#169; CardValidation ARGM Laboratoria </small></p>
     </footer>
     
 
-  <script src="index.js" type="module"></script>
+  <script src="index.js" type="module"></script> <!--conecta con js tipo "modulo" ya que son pestañas-->
    </div>
   </body>
 </html>
